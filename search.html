@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Find a Stay | Basera</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="navbar"><a class="logo" href="index.html"><span>⌂</span> basera</a><nav><a href="search.html" class="active">Find a Stay</a><a href="compare.html">Compare</a><a href="favourites.html">Favourites <span class="badge">3</span></a><a href="owner.html" class="nav-btn">List Your Property</a></nav></header>
+<main>
+<section class="page-title"><p class="eyebrow">DISCOVER YOUR NEXT HOME</p><h1>Find a stay that works for you.</h1><p>Search, filter and compare accommodation around your college.</p></section>
+<section class="search-layout">
+<form class="filters" action="search.html">
+<h3>Filters</h3>
+<label>Search<input name="q" placeholder="College, area, property..."></label>
+<label>Type<select name="type"><option value="">All types</option><option>PG</option><option>Flat</option><option>Hostel</option></select></label>
+<label>Maximum rent (₹3,000 – ₹15,000)<input type="range" name="rent" min="3000" max="15000" step="500" value="15000"></label>
+<label>Room type<select name="room"><option value="">Any room</option><option>Single</option><option>Double</option><option>Triple</option><option>1 BHK</option><option>2 BHK</option></select></label>
+<label>Minimum rating<select name="rating"><option value="0">Any rating</option><option value="4">4+</option><option value="4.5">4.5+</option></select></label>
+<div class="check"><input id="food" type="checkbox"><label for="food">Food available</label></div>
+<div class="check"><input id="wifi" type="checkbox"><label for="wifi">Wi-Fi</label></div>
+<div class="check"><input id="ac" type="checkbox"><label for="ac">AC</label></div>
+<div class="check"><input id="verified" type="checkbox"><label for="verified">Verified only</label></div>
+<button class="primary full" type="submit">Apply filters</button>
+<button class="secondary full" type="reset">Reset filters</button>
+</form>
+<section class="results">
+<div class="result-bar"><div><strong>6</strong> stays found</div>
+<select aria-label="Sort results"><option>Recommended</option><option>Price: Low to High</option><option>Price: High to Low</option><option>Top Rated</option></select></div>
+<div class="listing-grid">
+<article class="card">
+  <div class="card-img g1">🛏️<span class="tag verified">✓ Verified</span><span class="fav" title="Save" style="color:#9aa">♡</span></div>
+  <div class="card-body">
+    <div class="card-top"><h3>Green View PG</h3><span class="rating">★ 4.6</span></div>
+    <p class="loc">Muradnagar · 0.8 km from KIET</p>
+    <div class="chips"><span>Double</span><span>Wi-Fi</span><span>Food</span><span>Laundry</span></div>
+    <p class="price">₹6,500 <small>/ month</small></p>
+    <div class="card-actions"><a class="primary" href="property.html">View details</a><a class="secondary" href="compare.html">Compare</a></div>
+  </div>
+</article>
+<article class="card">
+  <div class="card-img g2">🏡<span class="tag verified">✓ Verified</span><span class="fav" title="Save" style="color:#9aa">♡</span></div>
+  <div class="card-body">
+    <div class="card-top"><h3>Scholars Nest</h3><span class="rating">★ 4.4</span></div>
+    <p class="loc">Raj Nagar Ext. · 2.4 km from KIET</p>
+    <div class="chips"><span>Single</span><span>Wi-Fi</span><span>Food</span><span>AC</span></div>
+    <p class="price">₹8,200 <small>/ month</small></p>
+    <div class="card-actions"><a class="primary" href="property.html">View details</a><a class="secondary" href="compare.html">Compare</a></div>
+  </div>
+</article>
+<article class="card">
+  <div class="card-img g3">🏫<span class="tag">Hostel</span><span class="fav" title="Save" style="color:#9aa">♡</span></div>
+  <div class="card-body">
+    <div class="card-top"><h3>Campus Corner Hostel</h3><span class="rating">★ 4.1</span></div>
+    <p class="loc">Muradnagar · 0.5 km from KIET</p>
+    <div class="chips"><span>Triple</span><span>Wi-Fi</span><span>Food</span></div>
+    <p class="price">₹4,800 <small>/ month</small></p>
+    <div class="card-actions"><a class="primary" href="property.html">View details</a><a class="secondary" href="compare.html">Compare</a></div>
+  </div>
+</article>
+<article class="card">
+  <div class="card-img g4">🏢<span class="tag verified">✓ Verified</span><span class="fav" title="Save" style="color:#9aa">♡</span></div>
+  <div class="card-body">
+    <div class="card-top"><h3>Urban Nest</h3><span class="rating">★ 4.7</span></div>
+    <p class="loc">Crossings Republik · 5.1 km from KIET</p>
+    <div class="chips"><span>2 BHK</span><span>Wi-Fi</span><span>AC</span><span>Parking</span></div>
+    <p class="price">₹12,500 <small>/ month</small></p>
+    <div class="card-actions"><a class="primary" href="property.html">View details</a><a class="secondary" href="compare.html">Compare</a></div>
+  </div>
+</article>
+<article class="card">
+  <div class="card-img g1">🌇<span class="tag">PG</span><span class="fav" title="Save" style="color:#9aa">♡</span></div>
+  <div class="card-body">
+    <div class="card-top"><h3>Sunrise Residency</h3><span class="rating">★ 4.3</span></div>
+    <p class="loc">Vaishali · 9.0 km from KIET</p>
+    <div class="chips"><span>Single</span><span>Wi-Fi</span><span>AC</span><span>Laundry</span></div>
+    <p class="price">₹9,000 <small>/ month</small></p>
+    <div class="card-actions"><a class="primary" href="property.html">View details</a><a class="secondary" href="compare.html">Compare</a></div>
+  </div>
+</article>
+<article class="card">
+  <div class="card-img g2">🏠<span class="tag verified">✓ Verified</span><span class="fav" title="Save" style="color:#9aa">♡</span></div>
+  <div class="card-body">
+    <div class="card-top"><h3>Raj Nagar Homes</h3><span class="rating">★ 4.5</span></div>
+    <p class="loc">Raj Nagar · 2.9 km from KIET</p>
+    <div class="chips"><span>1 BHK</span><span>Wi-Fi</span><span>Parking</span></div>
+    <p class="price">₹10,500 <small>/ month</small></p>
+    <div class="card-actions"><a class="primary" href="property.html">View details</a><a class="secondary" href="compare.html">Compare</a></div>
+  </div>
+</article>
+</div>
+</section>
+</section>
+</main>
+<footer><div class="logo"><span>⌂</span> basera</div><p>Student accommodation, simplified.</p><p>Prototype · HTML &amp; CSS · 2026–27</p></footer>
+</body>
+</html>
